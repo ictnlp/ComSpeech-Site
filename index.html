@@ -53,7 +53,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Can We Achieve High-quality Direct Speech-to-Speech Translation Without Parallel Speech Data?</h1>
+            <h1 class="title is-1 publication-title">Can We Achieve High-quality Direct Speech-to-Speech Translation without Parallel Speech Data?</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <strong>
@@ -94,7 +94,7 @@
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper (Coming Soon)</span>
+                        <span>Paper</span>
                       </a>
                     </span>
 
@@ -105,7 +105,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code (Coming Soon)</span>
+                    <span>Code</span>
                   </a>
                 </span>
             </div>
@@ -126,7 +126,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recently proposed two-pass direct speech-to-speech translation (S2ST) models decompose the task into speech-to-text translation (S2TT) and text-to-speech (TTS) within an end-to-end model, yielding promising results. However, the model training still relies on parallel speech data, which is extremely challenging to collect. Meanwhile, the model has not fully utilized the available data and pretrained models from S2TT and TTS, primarily due to the inconsistency between vocabularies of S2TT and TTS models. To address these challenges, in this paper, we first introduce a composite S2ST model, named ComSpeech, which can seamlessly integrate any S2TT and TTS models into an S2ST model through a vocabulary adaptor based on connectionist temporal classification (CTC). Furthermore, we propose a training method using only S2TT and TTS data (ComSpeech-ZS). It achieves zero-shot direct S2ST by utilizing contrastive learning in the latent space to perform representation alignment, thereby eliminating the need for parallel speech data. Experimental results on the CVSS dataset show that when the parallel speech data is available, ComSpeech surpasses previous two-pass models like UnitY and Translatotron 2 in both translation quality and decoding speed. When there is no parallel speech data, ComSpeech-ZS lags behind ComSpeech by only 0.7 ASR-BLEU and outperforms the cascaded models.
+            Recently proposed two-pass direct speech-to-speech translation (S2ST) models decompose the task into speech-to-text translation (S2TT) and text-to-speech (TTS) within an end-to-end model, yielding promising results. However, the training of these models still relies on parallel speech data, which is extremely challenging to collect. In contrast, S2TT and TTS have accumulated a large amount of data and pretrained models, which have not been fully utilized in the development of S2ST models. Inspired by this, in this paper, we first introduce a composite S2ST model named ComSpeech, which can seamlessly integrate any pretrained S2TT and TTS models into a direct S2ST model. Furthermore, to eliminate the reliance on parallel speech data, we propose a novel training method ComSpeech-ZS that solely utilizes S2TT and TTS data. It aligns representations in the latent space through contrastive learning, enabling the speech synthesis capability learned from the TTS data to generalize to S2ST in a zero-shot manner. Experimental results on the CVSS dataset show that when the parallel speech data is available, ComSpeech surpasses previous two-pass models like UnitY and Translatotron 2 in both translation quality and decoding speed. When there is no parallel speech data, ComSpeech-ZS lags behind \name by only 0.7 ASR-BLEU and outperforms the cascaded models.
           </p>
         </div>
       </div>
